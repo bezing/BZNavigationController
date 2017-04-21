@@ -131,6 +131,9 @@
     return self.basicController.hidesBottomBarWhenPushed;
 }
 
+- (UITabBarController*)tabBarController{
+    return self.basicController.tabBarController;
+}
 @end
 
 

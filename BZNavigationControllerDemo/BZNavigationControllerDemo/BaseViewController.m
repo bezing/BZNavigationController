@@ -21,20 +21,119 @@
     
     self.view.backgroundColor = [UIColor colorWithWhite:0.9 alpha:1];
     [self.navigationController.navigationBar setBarTintColor:randomColor];
-
+    
+    if (self.tabBarController.selectedIndex == 1 && self.bzNavigationController.childViewControllers.count > 1) {
+        /*
+         导航栏透明+hidesBottomBarWhenPushed实现FullScreen
+         */
+        [self.navigationController.navigationBar setBackgroundImage:[UIImage new] forBarMetrics:UIBarMetricsDefault];
+        [self.navigationController.navigationBar setShadowImage:[UIImage new]];
+        self.view.backgroundColor = randomColor;
+    }
+    
     [self aboutUI];
+    [self popToViewLogic];
+}
+
+- (void)clickPushButton{
+    switch (self.tabBarController.selectedIndex) {
+        case 0:
+        {
+            BaseViewController * bvc = [[BaseViewController alloc] init];
+            [self.bzNavigationController pushViewController:bvc animated:YES];
+        }
+            break;
+        case 1:
+        {
+            BaseViewController * bvc = [[BaseViewController alloc] init];
+            /**
+             隐藏tabbar
+             **/
+            bvc.hidesBottomBarWhenPushed = YES;
+            [self.bzNavigationController pushViewController:bvc animated:YES];
+        }
+            break;
+        case 2:
+        {
+            BaseViewController * bvc = [[BaseViewController alloc] init];
+            /**
+             禁用返回手势
+             **/
+            bvc.bzPanBackGestureDisable = YES;
+            [self.bzNavigationController pushViewController:bvc animated:YES];
+        }
+            break;
+        default:
+            break;
+    }
+    
 }
 
 - (void)backClick{
     [self.bzNavigationController popViewControllerAnimated:YES];
 }
-- (void)clickPushButton{
-}
+
 - (void)clickPopToButton{
+    BaseViewController * bvc;
+    switch (self.tabBarController.selectedIndex) {
+        case 0:
+            bvc = [BZControllerSingleton shareInstance].popA;
+            break;
+        case 1:
+            bvc = [BZControllerSingleton shareInstance].popB;
+            break;
+        case 2:
+            bvc = [BZControllerSingleton shareInstance].popP;
+            break;
+        default:
+            break;
+    }
+    [self.bzNavigationController popToViewController:bvc animated:YES];
 }
 - (void)clickPopRootButton{
+    [self.bzNavigationController popToRootViewControllerAnimated:YES];
 }
 
+
+
+
+
+
+
+
+
+
+
+- (void)popToViewLogic{
+    switch (self.tabBarController.selectedIndex) {
+        case 0:
+            if (self.bzNavigationController.viewControllers.count == 2) {
+                self.title = @"PopAVC";
+                [BZControllerSingleton shareInstance].popA = self;
+            }else{
+                self.title = @"Normal";
+            }
+            break;
+        case 1:
+            if (self.bzNavigationController.viewControllers.count == 2) {
+                self.title = @"PopBVC";
+                [BZControllerSingleton shareInstance].popB = self;
+            }else{
+                self.title = @"FullScreen";
+            }
+            break;
+        case 2:
+            if (self.bzNavigationController.viewControllers.count == 2) {
+                self.title = @"PopPVC";
+                [BZControllerSingleton shareInstance].popP = self;
+            }else{
+                self.title = @"PGDisable";
+            }
+            break;
+        default:
+            break;
+    }
+}
 
 - (void)buttonClick:(UIButton *)sender{
     switch (sender.tag) {
@@ -55,23 +154,16 @@
 - (void)aboutUI {
     
     if (self.bzNavigationController.viewControllers.count > 1) {
-        UIButton * back=[[UIButton alloc] initWithFrame:CGRectMake(0, 0, 14, 24)];
+        UIButton * back=[[UIButton alloc] initWithFrame:CGRectMake(0, 0, 20, 20)];
         [back setBackgroundImage:[UIImage imageNamed:@"back"] forState:UIControlStateNormal];
         [back addTarget:self action:@selector(backClick) forControlEvents:UIControlEventTouchUpInside];
         self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:back];
     }
     
-    UILabel * label = [[UILabel alloc] initWithFrame:CGRectMake(100, 100, self.view.bounds.size.width -  200, 40)];
-    label.text = self.labelString;
-    label.textColor = [UIColor blackColor];
-    label.textAlignment = NSTextAlignmentCenter;
-    label.font = [UIFont systemFontOfSize:14];
-    [self.view addSubview:label];
-    
     [self buttonWithTitle:@"PushToNewVC" andOffsetY:200 tag:101];
     [self buttonWithTitle:@"PopToPopVC"    andOffsetY:300 tag:102];
     [self buttonWithTitle:@"PopToRootVC"   andOffsetY:400 tag:103];
-
+    
 }
 
 - (void)buttonWithTitle:(NSString*)title andOffsetY:(CGFloat)offsetY tag:(NSInteger)tag{

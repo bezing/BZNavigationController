@@ -15,13 +15,8 @@
 		3DB73C551EA84A1700F41A3E /* BZNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DB73C541EA84A1700F41A3E /* BZNavigationController.m */; };
 		3DB73C691EA84A8A00F41A3E /* back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DB73C571EA84A8A00F41A3E /* back@2x.png */; };
 		3DB73C6A1EA84A8A00F41A3E /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DB73C591EA84A8A00F41A3E /* BaseViewController.m */; };
-		3DB73C6B1EA84A8A00F41A3E /* blue.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DB73C5A1EA84A8A00F41A3E /* blue.png */; };
 		3DB73C6C1EA84A8A00F41A3E /* BZControllerSingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DB73C5C1EA84A8A00F41A3E /* BZControllerSingleton.m */; };
 		3DB73C6D1EA84A8A00F41A3E /* BZTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DB73C5E1EA84A8A00F41A3E /* BZTabBarController.m */; };
-		3DB73C6E1EA84A8A00F41A3E /* NaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DB73C601EA84A8A00F41A3E /* NaViewController.m */; };
-		3DB73C6F1EA84A8A00F41A3E /* NbViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DB73C621EA84A8A00F41A3E /* NbViewController.m */; };
-		3DB73C701EA84A8A00F41A3E /* NpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DB73C641EA84A8A00F41A3E /* NpViewController.m */; };
-		3DB73C711EA84A8A00F41A3E /* red.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DB73C661EA84A8A00F41A3E /* red.png */; };
 		3DB73C721EA84A8A00F41A3E /* tab_my_s@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DB73C671EA84A8A00F41A3E /* tab_my_s@2x.png */; };
 		3DB73C731EA84A8A00F41A3E /* tab_my_us@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DB73C681EA84A8A00F41A3E /* tab_my_us@2x.png */; };
 /* End PBXBuildFile section */
@@ -40,19 +35,11 @@
 		3DB73C571EA84A8A00F41A3E /* back@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back@2x.png"; sourceTree = "<group>"; };
 		3DB73C581EA84A8A00F41A3E /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		3DB73C591EA84A8A00F41A3E /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
-		3DB73C5A1EA84A8A00F41A3E /* blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blue.png; sourceTree = "<group>"; };
 		3DB73C5B1EA84A8A00F41A3E /* BZControllerSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BZControllerSingleton.h; sourceTree = "<group>"; };
 		3DB73C5C1EA84A8A00F41A3E /* BZControllerSingleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BZControllerSingleton.m; sourceTree = "<group>"; };
 		3DB73C5D1EA84A8A00F41A3E /* BZTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BZTabBarController.h; sourceTree = "<group>"; };
 		3DB73C5E1EA84A8A00F41A3E /* BZTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BZTabBarController.m; sourceTree = "<group>"; };
-		3DB73C5F1EA84A8A00F41A3E /* NaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NaViewController.h; sourceTree = "<group>"; };
-		3DB73C601EA84A8A00F41A3E /* NaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NaViewController.m; sourceTree = "<group>"; };
-		3DB73C611EA84A8A00F41A3E /* NbViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NbViewController.h; sourceTree = "<group>"; };
-		3DB73C621EA84A8A00F41A3E /* NbViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NbViewController.m; sourceTree = "<group>"; };
-		3DB73C631EA84A8A00F41A3E /* NpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NpViewController.h; sourceTree = "<group>"; };
-		3DB73C641EA84A8A00F41A3E /* NpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NpViewController.m; sourceTree = "<group>"; };
 		3DB73C651EA84A8A00F41A3E /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
-		3DB73C661EA84A8A00F41A3E /* red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = red.png; sourceTree = "<group>"; };
 		3DB73C671EA84A8A00F41A3E /* tab_my_s@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab_my_s@2x.png"; sourceTree = "<group>"; };
 		3DB73C681EA84A8A00F41A3E /* tab_my_us@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab_my_us@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -68,6 +55,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3D1826D21EA9C65A008D621A /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				3DB73C5B1EA84A8A00F41A3E /* BZControllerSingleton.h */,
+				3DB73C5C1EA84A8A00F41A3E /* BZControllerSingleton.m */,
+				3DB73C651EA84A8A00F41A3E /* PrefixHeader.pch */,
+				3DB73C571EA84A8A00F41A3E /* back@2x.png */,
+				3DB73C671EA84A8A00F41A3E /* tab_my_s@2x.png */,
+				3DB73C681EA84A8A00F41A3E /* tab_my_us@2x.png */,
+			);
+			name = Others;
+			sourceTree = "<group>";
+		};
 		3DB73C2F1EA849AC00F41A3E = {
 			isa = PBXGroup;
 			children = (
@@ -87,10 +87,11 @@
 		3DB73C3A1EA849AC00F41A3E /* BZNavigationControllerDemo */ = {
 			isa = PBXGroup;
 			children = (
-				3DB73C521EA84A0400F41A3E /* BZNavigationController */,
-				3DB73C561EA84A1C00F41A3E /* DemoControllers */,
 				3DB73C3E1EA849AC00F41A3E /* AppDelegate.h */,
 				3DB73C3F1EA849AC00F41A3E /* AppDelegate.m */,
+				3DB73C521EA84A0400F41A3E /* BZNavigationController */,
+				3DB73C561EA84A1C00F41A3E /* DemoControllers */,
+				3D1826D21EA9C65A008D621A /* Others */,
 				3DB73C3B1EA849AC00F41A3E /* Supporting Files */,
 			);
 			path = BZNavigationControllerDemo;
@@ -99,11 +100,6 @@
 		3DB73C3B1EA849AC00F41A3E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				3DB73C571EA84A8A00F41A3E /* back@2x.png */,
-				3DB73C5A1EA84A8A00F41A3E /* blue.png */,
-				3DB73C661EA84A8A00F41A3E /* red.png */,
-				3DB73C671EA84A8A00F41A3E /* tab_my_s@2x.png */,
-				3DB73C681EA84A8A00F41A3E /* tab_my_us@2x.png */,
 				3DB73C441EA849AC00F41A3E /* Main.storyboard */,
 				3DB73C471EA849AC00F41A3E /* Assets.xcassets */,
 				3DB73C491EA849AC00F41A3E /* LaunchScreen.storyboard */,
@@ -127,17 +123,8 @@
 			children = (
 				3DB73C581EA84A8A00F41A3E /* BaseViewController.h */,
 				3DB73C591EA84A8A00F41A3E /* BaseViewController.m */,
-				3DB73C5B1EA84A8A00F41A3E /* BZControllerSingleton.h */,
-				3DB73C5C1EA84A8A00F41A3E /* BZControllerSingleton.m */,
 				3DB73C5D1EA84A8A00F41A3E /* BZTabBarController.h */,
 				3DB73C5E1EA84A8A00F41A3E /* BZTabBarController.m */,
-				3DB73C5F1EA84A8A00F41A3E /* NaViewController.h */,
-				3DB73C601EA84A8A00F41A3E /* NaViewController.m */,
-				3DB73C611EA84A8A00F41A3E /* NbViewController.h */,
-				3DB73C621EA84A8A00F41A3E /* NbViewController.m */,
-				3DB73C631EA84A8A00F41A3E /* NpViewController.h */,
-				3DB73C641EA84A8A00F41A3E /* NpViewController.m */,
-				3DB73C651EA84A8A00F41A3E /* PrefixHeader.pch */,
 			);
 			name = DemoControllers;
 			sourceTree = "<group>";
@@ -203,10 +190,8 @@
 			files = (
 				3DB73C731EA84A8A00F41A3E /* tab_my_us@2x.png in Resources */,
 				3DB73C4B1EA849AC00F41A3E /* LaunchScreen.storyboard in Resources */,
-				3DB73C6B1EA84A8A00F41A3E /* blue.png in Resources */,
 				3DB73C691EA84A8A00F41A3E /* back@2x.png in Resources */,
 				3DB73C721EA84A8A00F41A3E /* tab_my_s@2x.png in Resources */,
-				3DB73C711EA84A8A00F41A3E /* red.png in Resources */,
 				3DB73C481EA849AC00F41A3E /* Assets.xcassets in Resources */,
 				3DB73C461EA849AC00F41A3E /* Main.storyboard in Resources */,
 			);
@@ -221,12 +206,9 @@
 			files = (
 				3DB73C551EA84A1700F41A3E /* BZNavigationController.m in Sources */,
 				3DB73C6A1EA84A8A00F41A3E /* BaseViewController.m in Sources */,
-				3DB73C701EA84A8A00F41A3E /* NpViewController.m in Sources */,
 				3DB73C6C1EA84A8A00F41A3E /* BZControllerSingleton.m in Sources */,
 				3DB73C6D1EA84A8A00F41A3E /* BZTabBarController.m in Sources */,
-				3DB73C6F1EA84A8A00F41A3E /* NbViewController.m in Sources */,
 				3DB73C401EA849AC00F41A3E /* AppDelegate.m in Sources */,
-				3DB73C6E1EA84A8A00F41A3E /* NaViewController.m in Sources */,
 				3DB73C3D1EA849AC00F41A3E /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -390,6 +372,7 @@
 				3DB73C511EA849AC00F41A3E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
